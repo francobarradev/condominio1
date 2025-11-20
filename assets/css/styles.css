@@ -1,0 +1,32 @@
+body {background-color: lightgray}
+
+/* Carousel wrapper: centered and occupy 4/6 (2/3) of the viewport width */
+.carousel-wrapper {
+	/* Use 4/6 of viewport width but never exceed 1200px to avoid upscaling small images */
+	width: min(66.6667vw, 1200px);
+	max-width: 100%;
+	margin: 2rem auto; /* center horizontally and add vertical spacing */
+}
+
+/* Make sure carousel images scale nicely inside the wrapper.
+	 - width:100% to fill wrapper
+	 - max-height prevents excessive upscaling vertically on very large viewports
+	 - object-fit: contain preserves aspect ratio without cropping (use cover if you want crop)
+*/
+.carousel-wrapper .carousel-item img {
+	width: 100%;
+	height: auto;
+	max-height: 70vh;
+	object-fit: contain;
+	display: block;
+	image-rendering: auto; /* let browser choose best rendering */
+}
+
+/* Responsive: on small screens use nearly full width */
+@media (max-width: 576px) {
+	.carousel-wrapper {
+		width: 95vw;
+		margin: 1rem auto;
+	}
+}
+
