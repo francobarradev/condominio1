@@ -1,109 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- Llamamos las librerías de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
 
-    
-    
-<div>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Camino las Flores</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Paga tus gastos comunes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Rendicion de gastos</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Informaciones
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Eventos en la sede</a></li>
-            <li><a class="dropdown-item" href="#">Comunidad</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Otras cosas</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Busqueda</button>
-      </form>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Camino las Flores</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="paga_gastos_comunes.html">
+                            Paga tus gastos comunes
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rendicion de gastos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Informaciones
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Eventos en la sede</a></li>
+                            <li><a class="dropdown-item" href="#">Comunidad</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Otras cosas</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#cartOffcanvas">
+                        Carrito de compras
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- titulos principales -->
+    <div class="text-center mt-4">
+        <h1>Condominio Camino las Flores</h1>
+        <h4 class="mt-2">
+            Camino las Flores Camino las Flores Camino las Flores Camino las Flores Camino las Flores
+        </h4>
     </div>
-  </div>
-</nav>
-</div>
 
-<div><center><h1>Condominio Camino las Flores</h1></center></div>
-<div><center><h4>Camino las Flores Camino las Flores Camino las Flores Camino las Flores Camino las Flores</h4></center></div>
-<br>
+    <!-- Carousel - aquí utilizamos el carousel y agregamos las fotos de la carpeta assets/img -->
+    <div class="carousel-wrapper mt-4" id="img_1">
+        <div id="carouselCondominio" class="carousel slide" data-bs-ride="carousel">
 
-<div id="img_1" class="carousel-wrapper">
-  <div id="carouselCondominio" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselCondominio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselCondominio" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselCondominio" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselCondominio" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#carouselCondominio" data-bs-slide-to="4" aria-label="Slide 5"></button>
-      <button type="button" data-bs-target="#carouselCondominio" data-bs-slide-to="5" aria-label="Slide 6"></button>
-      <button type="button" data-bs-target="#carouselCondominio" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselCondominio" data-bs-slide-to="0" class="active"
+                    aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselCondominio" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselCondominio" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselCondominio" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carouselCondominio" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#carouselCondominio" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#carouselCondominio" data-bs-slide-to="6"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/condominio1.avif" class="d-block w-100" alt="Condominio 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/condominio2.avif" class="d-block w-100" alt="Condominio 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/condominio3.avif" class="d-block w-100" alt="Condominio 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/condominio4.avif" class="d-block w-100" alt="Condominio 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/condominio5.avif" class="d-block w-100" alt="Condominio 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/condominio6.avif" class="d-block w-100" alt="Condominio 6">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/condominio7.avif" class="d-block w-100" alt="Condominio 7">
+                </div>
+            </div>
+
+            <!-- Botones del carousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCondominio" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCondominio" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+
+        </div>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/img/condominio1.avif" class="d-block w-100" alt="Condominio 1">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/condominio2.avif" class="d-block w-100" alt="Condominio 2">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/condominio3.avif" class="d-block w-100" alt="Condominio 3">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/condominio4.avif" class="d-block w-100" alt="Condominio 4">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/condominio5.avif" class="d-block w-100" alt="Condominio 5">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/condominio6.avif" class="d-block w-100" alt="Condominio 6">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/condominio7.avif" class="d-block w-100" alt="Condominio 7">
-      </div>
+
+    <!-- card que contiene los roductos -->
+    <div class="container my-5">
+
+        <!-- Producto 1 -->
+        <div class="product-item mb-4" data-name="Gastos comunes" data-price="100000">
+            <h2>Gastos comunes</h2>
+            <div class="card" style="width: 400px;">
+                <img class="card-img-top" src="assets/img/gastos_comunes.jpg" alt="Gastos comunes">
+                <div class="card-body">
+                    <h4 class="card-title">Gastos comunes</h4>
+                    <p class="card-text">Gastos mensuales de mantenimiento y servicios</p>
+                    <p class="product-price">$100.000</p>
+                    <button type="button" class="btn btn-primary add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-item mb-4" data-name="Arriendo sede" data-price="100000">
+            <h2>Arriendo sede</h2>
+            <div class="card" style="width: 400px;">
+                <img class="card-img-top" src="assets/img/sede_condominio.avif" alt="Arriendo sede">
+                <div class="card-body">
+                    <h4 class="card-title">Arriendo sede</h4>
+                    <p class="card-text">Alquiler mensual de la sede del condominio</p>
+                    <p class="product-price">$100.000</p>
+                    <button type="button" class="btn btn-primary add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-item mb-5" data-name="Arriendo parrilla" data-price="100000">
+            <h2>Arriendo parrilla</h2>
+            <div class="card" style="width: 400px;">
+                <img class="card-img-top" src="assets/img/parrilla_condominio.avif" alt="Arriendo parrilla">
+                <div class="card-body">
+                    <h4 class="card-title">Arriendo parrilla</h4>
+                    <p class="card-text">Alquiler mensual de la parrilla del condominio</p>
+                    <p class="product-price">$100.000</p>
+                    <button type="button" class="btn btn-primary add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCondominio" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselCondominio" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-  </div>
-</div>
 
+    <!-- Utilizamos Offcanvas (carrito), un elemento de Bootstrap para mostrar el carrito de compras, lo utilizamos para contar los productos agregados -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartLabel"> <!-- Esto hace que el offcanvas se abra desde la derecha -->
+        <div class="offcanvas-header">
+            <h5 id="cartLabel">Carrito de compras</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
 
+        <div class="offcanvas-body"> <!-- cuerpo del offcanvas -->
+            <ul id="cartItems" class="list-group mb-3"></ul> <!--  llamamos a la lista de los productos -->
 
+            <div class="d-flex justify-content-between mb-3">
+                <strong>Total:</strong>
+                <span id="cartTotal">$0</span> <!-- mostramos el total, parte en $0 -->
+            </div>
 
-    
+            <button id="checkoutBtn" class="btn btn-success w-100">Pagar</button> <!-- Botón de pagar -->
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // estas son las variables que utilizaremos para el carrito, utilizando bootstrap y listerner de eventos
+            const cart = {}; // Objeto donde guardamos los productos agregados, lo tulizaremos para almacenar los productos
+            const formatter = new Intl.NumberFormat('es-CL');  // Formateador de moneda, sirve para mostrar los precios en formato chileno -->
+            const cartItems = document.getElementById('cartItems'); // Lista donde se muestran los productos
+            const cartTotal = document.getElementById('cartTotal'); // Total del carrito
+            const offcanvas = new bootstrap.Offcanvas(document.getElementById('cartOffcanvas')); // Offcanvas del carrito, sirve para abrir y cerrar el carrito
+
+            // estra función crea los productos en el carrito, calcula cantidades y subtotales, y actualiza el total
+            function renderCart() {  
+                cartItems.innerHTML = '';  //comenzamos con el carrito vacío
+                let total = 0;
+
+                Object.values(cart).forEach(item => {  // listamos o recorremos los productos en el carrito
+
+                    const li = document.createElement('li');  //este li (lista, ul) es cada elemento de la lista del carrito
+                    li.className = 'list-group-item d-flex justify-content-between align-items-center';
+
+                    const left = document.createElement('div');  // Contenedor izquierdo: nombre y precio unitario
+                    left.innerHTML =
+                        `<div>${item.name} <small class="text-muted">x${item.qty}</small></div>
+                         <div class="text-muted small">${formatter.format(item.price)}</div>`; // mostramos el nombre del producto, la cantidad y el precio unitario
+
+                    const right = document.createElement('div');  // Contenedor derecho: subtotal + botones
+                    const sub = item.price * item.qty;  // calculamos el subtotal
+                    total += sub; // suma el total
+
+                    right.innerHTML =  // mostramos el subtotal y los botones para aumentar, disminuir y eliminar el producto
+                        `<span>${formatter.format(sub)}</span>
+                         <button class="btn btn-sm btn-outline-secondary ms-2 btn-decrease">-</button> 
+                         <button class="btn btn-sm btn-outline-secondary ms-1 btn-increase">+</button>
+                         <button class="btn btn-sm btn-danger ms-2 btn-remove">Eliminar</button>`;
+
+                    li.appendChild(left);  // agregamos el contenedor izquierdo al li
+                    li.appendChild(right); // agregamos el contenedor derecho al li
+                    cartItems.appendChild(li);  // agregamos el li a la lista del carrito
+
+                    // Eventos de botones del carrito
+                    right.querySelector('.btn-increase').addEventListener('click', () => {
+                        item.qty++;
+                        renderCart();
+                    });
+
+                    right.querySelector('.btn-decrease').addEventListener('click', () => {
+                        if (item.qty > 1) item.qty--;
+                        else delete cart[item.id];
+                        renderCart();
+                    });
+
+                    right.querySelector('.btn-remove').addEventListener('click', () => {
+                        delete cart[item.id];
+                        renderCart();
+                    });
+                });
+
+                cartTotal.textContent = '$' + formatter.format(total);  // Actualizamos el total del carrito. muestra el totoal en el carrito
+            }
+
+            /* -------------------------------------------------------
+               EVENTO: Agregar al carrito
+               - Se activa al presionar “Agregar al carrito”
+               - Toma nombre y precio desde data-attributes
+               - Llama a renderCart() después
+               - Abre el offcanvas automáticamente
+            -------------------------------------------------------- */
+            document.querySelectorAll('.add-to-cart').forEach(btn => { // aca estan los botones de agregar al carrito
+                btn.addEventListener('click', function (e) {    // evento click para agregar al carrito
+
+                    const productEl = e.currentTarget.closest('.product-item');  // obtenemos el elemento padre más cercano con la clase .product-item
+                    const id = productEl.dataset.name.replace(/\s+/g, '_').toLowerCase();  // crea un id único basado en el nombre del producto. esto /\s+/g reemplaza los espacios por guiones bajos
+                    const name = productEl.dataset.name;  // obtenemos el nombre del producto desde  el data-name
+                    const price = Number(productEl.dataset.price);  // obtenemos el precio del producto desde  data-price
+
+                    if (cart[id]) cart[id].qty++; // este if hace que si el producto ya está en el carrito, aumentamos la cantidad +1
+                    else cart[id] = { id, name, price, qty: 1 }; // si no está en el carrito, agremgamos +1
+
+                    renderCart();   // actualizamos la visualización del carrito
+                    offcanvas.show(); // esto abre el carrito automáticamente al agregar un producto
+                });
+            });
+
+        });
+    </script>
+
 </body>
 </html>
