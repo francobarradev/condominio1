@@ -1,4 +1,4 @@
-# condominio1
+E-commerce (Frontend) Condominio CLF
 Proyecto Pagina web de ecomerce para el condominio CLF
 Condominio Camino Las Flores – Plataforma Web
 
@@ -25,21 +25,21 @@ El sitio es completamente responsive
 
 HTML5 Se utilizan etiquetas correctas como:
 
-<header>
-<nav>
-<main>
-<section>
-<article>
-<footer>
+-header
+-nav
+-main
+-section
+-article
+-footer
 
 Bootstrap 
 Componentes usados:
 
-Navbar
-Cards
-Buttons
-Carousel
-Offcanvas
+Navbar,
+Cards,
+Buttons,
+Carousel,
+Offcanvas,
 Badges (carrito)
 
 Proyecto desarrollado por Franco Barra, para Módulo 2 – E-commerce (Frontend) SENSE - Sustantiva.
