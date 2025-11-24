@@ -75,9 +75,13 @@
     <!-- titulos principales -->
     <div class="text-center mt-4">
         <h1>Condominio Camino las Flores</h1>
-        <h4 class="mt-2">
-            Camino las Flores Camino las Flores Camino las Flores Camino las Flores Camino las Flores
-        </h4>
+        <h6 class="mt-2">
+            El proyecto corresponde a un Condominio Tipo A con un total de 240 viviendas, agrupadas en 10 edificios de 4 pisos de altura 
+            y de 6 departamentos por planta. Se emplaza en terreno rectangular, dejando las edificaciones hacia los bordes, 
+            distanciándose de acuerdo a normativa vigente de sus deslindes. El proyecto de áreas verdes interior se configura a 
+            través de un gran corredor central, a lo largo del terreno, el cual articula espacios de circulación y ocio, zonas de 
+            juegos infantiles y zonas con equipamiento deportivo.
+        </h6>
     </div>
 
     <!-- Carousel - aquí utilizamos el carousel y agregamos las fotos de la carpeta assets/img -->
@@ -133,54 +137,56 @@
         </div>
     </div>
 
-    <!-- card que contiene los roductos -->
-    <div class="container my-5">
+        <!-- Productos  -->
+        <div class="container my-5">
+            <h2 class="mb-3">Gastos comunes y arriendos</h2>
+            <div class="products-row d-flex gap-3 flex-nowrap overflow-auto py-2">
 
-        <!-- Producto 1 -->
-        <div class="product-item mb-4" data-name="Gastos comunes" data-price="100000">
-            <h2>Gastos comunes</h2>
-            <div class="card" style="width: 400px;">
-                <img class="card-img-top" src="assets/img/gastos_comunes.jpg" alt="Gastos comunes">
-                <div class="card-body">
-                    <h4 class="card-title">Gastos comunes</h4>
-                    <p class="card-text">Gastos mensuales de mantenimiento y servicios</p>
-                    <p class="product-price">$100.000</p>
-                    <button type="button" class="btn btn-primary add-to-cart">Agregar al carrito</button>
+                <!-- Producto 1 , data-name lo identifica y data-price indicca el precio para las funciones -->
+                <div class="product-item" data-name="Gastos comunes" data-price="100000" style="flex:0 0 400px;">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="assets/img/gastos_comunes.jpg" alt="Gastos comunes">
+                        <div class="card-body">
+                            <h4 class="card-title">Gastos comunes</h4>
+                            <p class="card-text">Gastos mensuales de mantenimiento y servicios</p>
+                            <p class="product-price">$100.000</p>  <!-- precio que se ve en la pagina -->
+                            <button type="button" class="btn btn-primary add-to-cart">Agregar al carrito</button>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Producto 2 -->
+                <div class="product-item" data-name="Arriendo sede" data-price="45000" style="flex:0 0 400px;">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="assets/img/sede_condominio.avif" alt="Arriendo sede">
+                        <div class="card-body">
+                            <h4 class="card-title">Arriendo sede</h4>
+                            <p class="card-text">Alquiler mensual de la sede del condominio</p>
+                            <p class="product-price">$45.000</p>
+                            <button type="button" class="btn btn-primary add-to-cart">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-item" data-name="Arriendo parrilla" data-price="10000" style="flex:0 0 400px;">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="assets/img/parrilla_condominio.avif" alt="Arriendo parrilla">
+                        <div class="card-body">
+                            <h4 class="card-title">Arriendo parrilla</h4>
+                            <p class="card-text">Alquiler diario de la parrilla del condominio</p>
+                            <p class="product-price">$10.000</p>
+                            <button type="button" class="btn btn-primary add-to-cart">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <!-- Producto 2 -->
-        <div class="product-item mb-4" data-name="Arriendo sede" data-price="100000">
-            <h2>Arriendo sede</h2>
-            <div class="card" style="width: 400px;">
-                <img class="card-img-top" src="assets/img/sede_condominio.avif" alt="Arriendo sede">
-                <div class="card-body">
-                    <h4 class="card-title">Arriendo sede</h4>
-                    <p class="card-text">Alquiler mensual de la sede del condominio</p>
-                    <p class="product-price">$100.000</p>
-                    <button type="button" class="btn btn-primary add-to-cart">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
 
-        <!-- Producto 3 -->
-        <div class="product-item mb-5" data-name="Arriendo parrilla" data-price="100000">
-            <h2>Arriendo parrilla</h2>
-            <div class="card" style="width: 400px;">
-                <img class="card-img-top" src="assets/img/parrilla_condominio.avif" alt="Arriendo parrilla">
-                <div class="card-body">
-                    <h4 class="card-title">Arriendo parrilla</h4>
-                    <p class="card-text">Alquiler mensual de la parrilla del condominio</p>
-                    <p class="product-price">$100.000</p>
-                    <button type="button" class="btn btn-primary add-to-cart">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
 
-    </div>
-
-    <!-- Utilizamos Offcanvas (carrito), un elemento de Bootstrap para mostrar el carrito de compras, lo utilizamos para contar los productos agregados -->
+        <!-- Utilizamos Offcanvas (carrito), un elemento de Bootstrap para mostrar el carrito de compras, lo utilizamos para contar los productos agregados -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartLabel"> <!-- Esto hace que el offcanvas se abra desde la derecha -->
         <div class="offcanvas-header">
             <h5 id="cartLabel">Carrito de compras</h5>
@@ -258,13 +264,7 @@
                 cartTotal.textContent = '$' + formatter.format(total);  // Actualizamos el total del carrito. muestra el totoal en el carrito
             }
 
-            /* -------------------------------------------------------
-               EVENTO: Agregar al carrito
-               - Se activa al presionar “Agregar al carrito”
-               - Toma nombre y precio desde data-attributes
-               - Llama a renderCart() después
-               - Abre el offcanvas automáticamente
-            -------------------------------------------------------- */
+
             document.querySelectorAll('.add-to-cart').forEach(btn => { // aca estan los botones de agregar al carrito
                 btn.addEventListener('click', function (e) {    // evento click para agregar al carrito
 
@@ -283,6 +283,13 @@
 
         });
     </script>
+
+            <!-- Footer, este elemento va al final de la pagina -->
+        <footer class="bg-light text-center text-muted py-3 mt-4">
+            <div class="container">
+                <small>Creado por <strong>Franco Barra</strong> para la comunidad — 2025</small>
+            </div>
+        </footer>
 
 </body>
 </html>

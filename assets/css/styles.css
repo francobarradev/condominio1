@@ -36,6 +36,20 @@ img,
 	border-radius:8px;
 }
 
+/* Botones del carousel en azul claro */
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:2.5rem 2.5rem;  /* tamaño del boton <> */
+}
+.carousel-control-prev-icon{
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236fb4ff'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L6.707 7l4.647 4.646a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708 0z'/></svg>");
+}
+.carousel-control-next-icon{
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236fb4ff'><path d='M4.646 1.646a.5.5 0 0 0 0 .708L9.293 7 4.646 11.646a.5.5 0 0 0 .708.708l5-5a.5.5 0 0 0 0-.708l-5-5a.5.5 0 0 0-.708 0z'/></svg>");
+}
+
 
 @media (max-width: 576px) {
 	.carousel-wrapper {
