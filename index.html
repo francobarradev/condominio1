@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
+
 <body>
 
     <!-- Navbar -->
@@ -56,13 +57,11 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
+                    
                 </ul>
 
                 <form class="d-flex" role="search">
-                    <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                    <button class="btn btn-light-blue" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#cartOffcanvas">
                         Carrito de compras
                     </button>
@@ -201,7 +200,7 @@
                 <span id="cartTotal">$0</span> <!-- mostramos el total, parte en $0 -->
             </div>
 
-            <button id="checkoutBtn" class="btn btn-success w-100">Pagar</button> <!-- Botón de pagar -->
+            <button id="checkoutBtn" class="btn btn-light-blue w-100">Pagar</button> <!-- Botón de pagar -->
         </div>
     </div>
 
@@ -281,15 +280,30 @@
                 });
             });
 
-        });
+        }); 
     </script>
 
-            <!-- Footer, este elemento va al final de la pagina -->
+        <script src="assets/js/main.js"></script>
+        <div class="container mt-4">
+    <h3>Fechas de arriendo de la sede</h3>
+
+    <!-- este boton muestra las fechas agendadas de la sede, usando un popup. lo llamamos desde main.js -->
+    <button id="mostrarFechasBtn" class="btn btn-primary">
+        Mostrar fechas agendadas
+    </button>
+
+    
+
+
+            <!-- este es el footer, va al final de la pagina, utilizamos strong para resaltar el nombre del creador -->
         <footer class="bg-light text-center text-muted py-3 mt-4">
             <div class="container">
                 <small>Creado por <strong>Franco Barra</strong> para la comunidad — 2025</small>
             </div>
         </footer>
+
+
+</div>
 
 </body>
 </html>

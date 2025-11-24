@@ -58,3 +58,21 @@ img,
 	}
 }
 
+/* boton azul claro del carrito */
+.btn-light-blue{
+	--bs-btn-bg: #6fb4ff;
+	--bs-btn-border-color: #6fb4ff;
+	--bs-btn-color: #ffffff;
+	background-color: var(--bs-btn-bg);
+	border-color: var(--bs-btn-border-color);
+	color: var(--bs-btn-color);
+}
+.btn-light-blue:hover{
+	background-color: #5aa6ea;
+	border-color: #5aa6ea;
+	color: #ffffff;
+}
+.btn-light-blue:focus{
+	box-shadow: 0 0 0 .25rem rgba(111,180,255,0.35);
+}
+
