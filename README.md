@@ -5,10 +5,10 @@ Condominio Camino Las Flores – Plataforma Web
 Proyecto web para que los residentes del Condominio Camino Las Flores puedan pagar gastos comunes, revisar información relevante y agendar el uso de instalaciones como la sede o la parrilla.
 
 Este proyecto fue desarrollado utilizando:
-HTML5 
-CSS3
-Bootstrap 5 (CDN)
-JavaScript
+HTML5, 
+CSS3,
+Bootstrap 5, 
+JavaScript,
 Git & GitHub
 
 Funcionalidades principales:
